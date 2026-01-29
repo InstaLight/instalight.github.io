@@ -81,6 +81,15 @@
   width: 80px;
   filter: drop-shadow(0 0 8px #38bdf8);
 }
+
+    .project-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  border: 1px solid #1e293b;
+}
   </style>
 </head>
 <body>
@@ -223,13 +232,41 @@
 </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Project Title</h3>
-      <p>Test.</p>
-      <p><a href="#">View on GitHub</a></p>
-    </div>
-  </section>
+  <h2>Projects</h2>
+
+  <div class="card">
+    <img src="https://github.com/InstaLight/security-monitoring-lab/blob/main/screenshots/wazuh-ubuntu-alerts.png?raw=true" alt="Wazuh Dashboard" class="project-img">
+    <h3>Wazuh Lab</h3>
+    <p>
+      A hands-on cybersecurity lab designed to simulate real-world endpoint
+      detection and response using Wazuh, an open-source SIEM and XDR platform.
+      This project demonstrates centralized logging and alerting for Windows
+      and Linux machines.
+    </p>
+    <p><a href="https://github.com/InstaLight/security-monitoring-lab">View on GitHub</a></p>
+  </div>
+
+  <div class="card">
+    <h3>Automated Backup System</h3>
+    <p>
+      A cross-platform backup automation system using PowerShell for Windows
+      and Bash for Linux. It backs up user profile folders and critical system
+      configuration files with logging, archiving, and scheduling.
+    </p>
+    <p><a href="https://github.com/InstaLight/automated-backup">View on GitHub</a></p>
+  </div>
+
+  <div class="card">
+    <img src="https://github.com/InstaLight/active-directory-lab/blob/main/assets/screenshots/ad-users.png?raw=true" alt="Active Directory Lab" class="project-img">
+    <h3>Active Directory Lab</h3>
+    <p>
+      Simulates a basic enterprise network using Windows Server 2022 and
+      Windows 10, focusing on Active Directory, Group Policies, and
+      domain-joined clients.
+    </p>
+    <p><a href="https://github.com/InstaLight/active-directory-lab">View on GitHub</a></p>
+  </div>
+</section>
 
   <section id="cv">
     <h2>CV / Resume</h2>
